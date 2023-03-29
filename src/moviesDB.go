@@ -262,16 +262,16 @@ func main() {
 	fmt.Println(dbCollecsName)
 
 	myUI := &appUI{}
-	if utils.Exists(dbCollecsName) {
+	if _, err := os.Stat(dbCollecsName); os.IsNotExist(err) {
+		modele.OpenDBCollec(dbCollecsName)
+		modele.CreateCollecTable()
+	} else {
 		modele.OpenDBCollec(dbCollecsName)
 		collection := modele.GetCollecByID(1)
 		myUI.collec = collection.Name
 		myUI.dbType = collection.Type
 		myUI.dbName = filepath.Join(moviesDBDir, collection.Name+".sqlite")
 		myUI.pathImg = filepath.Join(moviesDBDir, collection.Name)
-	} else {
-		modele.OpenDBCollec(dbCollecsName)
-		modele.CreateCollecTable()
 	}
 	modele.OpenDB(myUI.dbName)
 
