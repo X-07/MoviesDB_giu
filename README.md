@@ -23,5 +23,5 @@ Voici le résultat obtenu ...
 j'ai donc abandonné ce projet (que je laisse ici comme example) et le l'ai continué en GOTK3 : https://github.com/gotk3/gotk3
 - Beaucoup, beaucoup plus verbeux
 
-### Interface principale Gtk3 à un stade plus avancé!
+### Interface principale Gtk3 à un stade beaucoup plus avancé!
 ![Image Gtk3](/ScreenShots/MoviesDB-Gotk3.jpg)
