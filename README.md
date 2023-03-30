@@ -18,6 +18,7 @@ Voici le résultat obtenu ...
 - Look! Chacun se fera son avis
 - IMPOSSIBLE d'avoir un retour à la ligne automatique pour les très long texte même dans un champ multiligne!
  Un bug qui sera peut être corrigé un jour. 
+- Prometteur, à surveiller.
 
 ## Le problème du champ multiligne est rédhibitoire pour moi
 j'ai donc abandonné ce projet (que je laisse ici comme example) et le l'ai continué en GOTK3 : https://github.com/gotk3/gotk3
